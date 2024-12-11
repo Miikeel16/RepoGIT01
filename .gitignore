@@ -1,0 +1,24 @@
+### Java ###
+# Clases complicadas
+*.class
+
+#Carpeta con binarios
+bin/
+
+#Archivos de log
+.log
+
+#Mobile Tools for java (j2ME)
+.mtj.tmp/
+
+#Paquetes
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+#Ejemplo chorra
+NoSubirGit.docx
