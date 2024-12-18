@@ -36,8 +36,15 @@ public class Empleado {
 		this.clubSocial = false;
 		this.sueldo = (float) 0.0;
 	}
-	
-	
+	public Empleado(String dni, String nombre, String apellidos) {
+		this.dni = dni;
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.categoria = "base";
+		this.edad = 0;
+		this.clubSocial = false;
+		this.sueldo = (float) 0.0;
+	}
 	///////////////////GETTERS Y SETTERS///////////////
 	
 	
@@ -77,10 +84,20 @@ public class Empleado {
 	public void setClubSocial(boolean clubSocial) {
 		this.clubSocial = clubSocial;
 	}
+	public void setClubSocial() {
+		this.clubSocial = sueldo>2000;
+	}
 	public float getSueldo() {
 		return sueldo;
 	}
 	public void setSueldo(float sueldo) {
 		this.sueldo = sueldo;
 	}
+	/////////////// to string ////////////
+	@Override
+	public String toString() {
+		return "Empleado [DNI= " + dni + ", Nombre completo= " + nombre + " " + apellidos + ", Categoria= " + categoria
+				+ ", Edad=" + edad + ", ClubSocial= " + clubSocial + ", Sueldo= " + sueldo + "]";
+	}
+	
 }
